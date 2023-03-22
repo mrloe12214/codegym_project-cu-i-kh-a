@@ -43,11 +43,15 @@ But_search.place(x = 100, y = 100, width = 80, height = 35)
 sche = Frame(root)
 lb_sche = Label(sche, text = "THỜI KHÓA BIỂU",font = font1, fg = 'blue')
 lb_sche.place(anchor = NW)
+But_home = Button(sche, text = "Trang chủ",fg = "black" , bg = "light blue", activebackground = "light gray", command = lambda:show_frame(home_scr))
+But_home.place(x = 10, y = 100, width = 80, height = 35)
 
 #Homework
 hw = Frame(root)
 lb_hw = Label(hw, text = "BÀI TẬP VỀ NHÀ",font = font1, fg = 'blue')
 lb_hw.place(anchor = NW)
+But_home = Button(hw, text = "Trang chủ",fg = "black" , bg = "light blue", activebackground = "light gray", command = lambda:show_frame(home_scr))
+But_home.place(x = 10, y = 100, width = 80, height = 35)
 
 for frame in (home_scr, info, sche, hw):
     frame.grid(row=0, column = 0, sticky = "nsew")
